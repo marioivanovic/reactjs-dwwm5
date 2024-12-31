@@ -10,6 +10,7 @@ import Form from '../form/Form.js'
 import ToDo from '../toDo/toDo.js'
 import ButtonParent from '../../ButtonParent.js'
 import ProductList from '../../ProductList.js'
+import CardsProducts from '../cardsProducts/CardsProducts.js'
 
 
 function Home() {
@@ -110,6 +111,15 @@ function Home() {
             <ButtonParent />
 
             <ProductList products={products} />
+
+            <CardsProducts />
+
+            <h1>Binomes API</h1>
+
+            <h2>Groupe 1 : Karla & Maimouna : Entertainement</h2>
+            <h2>Groupe 2 : Asma & Yacine : Livres</h2>
+            <h2>Groupe 3 : Mahmoudou & Arthur</h2>
+            <h2>Groupe 4 : Ilyas & Mario</h2>
         </>
     )
 }

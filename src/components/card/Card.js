@@ -1,19 +1,16 @@
 import React from 'react'
 
-function Card() {
+function Card({ user }) {
     return (
-        <h1>Hello from Card dans Cards qui lui est dans Home et Home est appelé dans App.js</h1>
+        <>
+            <img src={user.avatar} alt={user.name} />
+            <h1>{user.name}</h1>
+            <p>{user.email}</p>
+        </>
+
     )
 }
 
 export default Card
-
-// App
-// |
-// |--Home
-//     |
-//     | --Cards
-//         |
-//         | --Card 
 
 
