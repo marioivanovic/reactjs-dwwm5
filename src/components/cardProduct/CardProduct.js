@@ -1,19 +1,19 @@
-import React from 'react'
+// import React from 'react'
 
-function CardProduct({ product }) {
-    return (
-        <>
+// function CardProduct({ product }) {
+//     return (
+//         <>
 
-            <h1>{product.title}</h1>
-            {product.images.map((image, index) => (
-                <img key={index} src={image} />
-            ))}
+//             <h1>{product.title}</h1>
+//             {product.images.map((image, index) => (
+//                 <img key={index} src={image} />
+//             ))}
 
-            <p>{product.description}</p>
-            <p>{product.price}</p>
-        </>
+//             <p>{product.description}</p>
+//             <p>{product.price}</p>
+//         </>
 
-    )
-}
+//     )
+// }
 
-export default CardProduct
+// export default CardProduct

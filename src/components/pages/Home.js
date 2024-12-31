@@ -11,6 +11,7 @@ import ToDo from '../toDo/toDo.js'
 import ButtonParent from '../../ButtonParent.js'
 import ProductList from '../../ProductList.js'
 import CardsProducts from '../cardsProducts/CardsProducts.js'
+import CardsBuddies from '../buddies/Buddies';
 
 
 function Home() {
@@ -112,7 +113,7 @@ function Home() {
 
             <ProductList products={products} />
 
-            <CardsProducts />
+            {/* <CardsProducts /> */}
 
             <h1>Binomes API</h1>
 
@@ -120,6 +121,7 @@ function Home() {
             <h2>Groupe 2 : Asma & Yacine : Livres</h2>
             <h2>Groupe 3 : Mahmoudou & Arthur</h2>
             <h2>Groupe 4 : Ilyas & Mario</h2>
+            <CardsBuddies />
         </>
     )
 }

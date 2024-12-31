@@ -1,11 +1,15 @@
 import React from 'react'
 
-function Card({ user }) {
+function Card({ agent }) {
+    console.log("AGENTS", agent)
     return (
         <>
-            <img src={user.avatar} alt={user.name} />
-            <h1>{user.name}</h1>
-            <p>{user.email}</p>
+            <h1>Agent : </h1>
+
+            <h1>{agent.displayName}</h1>
+
+            <img src={agent.displayIcon} alt="" />
+
         </>
 
     )

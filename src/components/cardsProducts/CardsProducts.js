@@ -1,20 +1,20 @@
-import React from 'react'
-import CardProduct from '../cardProduct/CardProduct';
-import { useFetchFakeBreeds } from './../../hooks/fakeProductsList'
+// import React from 'react'
+// import CardProduct from '../cardProduct/CardProduct';
+// import { useFetchFakeProducts } from './../../hooks/fakeProductsList'
 
-function CardsProducts() {
-    const { products, error } = useFetchFakeBreeds();
+// function CardsProducts() {
+//     const { products, error } = useFetchFakeProducts();
 
-    if (error) return <div>{error}</div>
-    return (
-        <>
-            {breeds.map(breed => (
-                <CardProduct key={breed.id} breed={breed} />
-            ))}
-        </>
+//     if (error) return <div>{error}</div>
+//     return (
+//         <>
+//             {products.map(product => (
+//                 <CardProduct key={product.id} product={product} />
+//             ))}
+//         </>
 
 
-    )
-}
+//     )
+// }
 
-export default CardsProducts
+// export default CardsProducts

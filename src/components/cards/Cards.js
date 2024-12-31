@@ -1,15 +1,15 @@
 import React from 'react'
 import Card from '../card/Card.js'
-import { useFetchFakeUsers } from './../../hooks/fakeUsersList'
+import { useFetchAgents } from './../../hooks/fakeUsersList'
 
 function Cards() {
-    const { users, error } = useFetchFakeUsers();
+    const { agents, error } = useFetchAgents();
 
     if (error) return <div>{error}</div>
     return (
         <>
-            {users.map(user => (
-                <Card key={user.id} user={user} />
+            {agents.map(agent => (
+                <Card key={agent.uuid} agent={agent} />
             ))}
         </>
 

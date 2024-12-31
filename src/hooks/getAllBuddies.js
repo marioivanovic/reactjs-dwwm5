@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
 import { api } from './../../src/api/config'
 
-export function useFetchAgents() {
-    const [agents, setAgents] = useState([]);
+export function useFetchBuddies() {
+    const [buddies, setBuddies] = useState([]);
     const [error, setError] = useState(null);
 
-    const fetchAgents = async () => {
+    const fetchBuddies = async () => {
         try {
-            const response = await api.get('/agents');
-            setAgents(response.data.data)
+            const response = await api.get('/buddies');
+            setBuddies(response.data.data)
             console.log("ici, response.data : ", response.data.data)
         } catch (error) {
             setError('Erreur de récup API');
@@ -16,8 +16,8 @@ export function useFetchAgents() {
     };
 
     useEffect(() => {
-        fetchAgents()
+        fetchBuddies()
     }, []);
 
-    return { agents, error };
+    return { buddies, error };
 }
