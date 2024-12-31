@@ -1,15 +1,33 @@
 import React from 'react'
 import CardGamer from '../cardGamer/CardGamer.js'
-import Hello from '../Hello.js'
 import Cards from '../cards/Cards.js'
+import Hello from '../Hello.js'
 import Tv from '../tv/Tv.js'
 import Compteur from '../compteur/Compteur.js'
 import Time from '../time/Time.js'
 import InputRef from '../inputRef/InputRef.js'
 import Form from '../form/Form.js'
 import ToDo from '../toDo/toDo.js'
+import ButtonParent from '../../ButtonParent.js'
+import ProductList from '../../ProductList.js'
+
 
 function Home() {
+    const products = [
+        { id: 1, name: 'iPhone 14 pro', price: 1400, stock: true },
+        { id: 2, name: 'iPhone 15 pro max', price: 2400, stock: false },
+        { id: 3, name: 'Samsung Galaxy S20', price: 1200, stock: true },
+        { id: 4, name: 'Sony Playstation 5', price: 500, stock: false },
+        { id: 5, name: 'Nintendo Switch', price: 400, stock: true },
+        { id: 6, name: 'LG Oled 55"', price: 1400, stock: true },
+        { id: 7, name: 'iPhone 14 pro', price: 1400, stock: true },
+        { id: 8, name: 'iPhone 15 pro max', price: 2400, stock: false },
+        { id: 9, name: 'Samsung Galaxy S20', price: 1200, stock: true },
+        { id: 10, name: 'Sony Playstation 5', price: 500, stock: false },
+        { id: 11, name: 'Nintendo Switch Pro', price: 400, stock: true },
+        { id: 12, name: 'LG Oled 65"', price: 1400, stock: true },
+    ]
+
     return (
         <>
             <h1>HOME</h1>
@@ -88,6 +106,10 @@ function Home() {
             <h2>Petite manip dom</h2>
 
             <ToDo />
+
+            <ButtonParent />
+
+            <ProductList products={products} />
         </>
     )
 }
